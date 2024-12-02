@@ -1,4 +1,7 @@
 # Running Ruby
+## Install rbenv on MacOS
+`brew install rbenv`
+
 ## List all versions of ruby that can be installed
 `rbenv install -l`
 
