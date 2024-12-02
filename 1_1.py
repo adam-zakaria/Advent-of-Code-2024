@@ -1,4 +1,3 @@
-import utils.utils as utils
 from functools import reduce
 
 ########################################################
@@ -6,7 +5,7 @@ from functools import reduce
 ########################################################
 x1 = []
 x2 = []
-with open('1.txt', 'r') as f:
+with open('1_1.txt', 'r') as f:
   for line in f:
     line = line.strip() # remove new line
     x1.append(int(line.split(' ')[0]))
@@ -15,7 +14,7 @@ with open('1.txt', 'r') as f:
 ########################################################
 # calculate distance
 ########################################################
-# print(sum([abs(y[0] - y[1]) for y in zip(sorted(x1), sorted(x2))]))
+print(sum([abs(y[0] - y[1]) for y in zip(sorted(x1), sorted(x2))]))
 # answer: 2285373
 
 
