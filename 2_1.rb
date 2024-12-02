@@ -11,7 +11,6 @@ File.open('2_1.txt', 'r') do |f|
     descending = numbers == numbers.sort.reverse
 
     # Check if any adjacent element does not differ by AT LEAST 1 AND AT MOST 3
-    #t2 = numbers.each_cons(2).all? { |a, b| (a - b).abs.between?(1, 3) }
     in_range = numbers.each_cons(2).all? { |a, b| (1 <= (a-b).abs) && ((a-b).abs <= 3) }
 
     # Increment safe_count if any condition is true
@@ -23,4 +22,4 @@ File.open('2_1.txt', 'r') do |f|
   end
 end
 
-puts safe_count
+puts safe_count # 631
